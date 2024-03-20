@@ -1,0 +1,55 @@
+.about {
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.right {
+    max-width: 700px; /* Set width to 50% to take up half of the container */
+    
+    
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    margin-top: 5rem; /* Add margin top to create space */
+    position: relative;
+}
+
+.img {
+    max-width: 90%;
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    
+}
+
+.img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+
+
+.top{
+    grid-column: 1/ span 8;
+    grid-row: 1;
+    padding-top: 20%;
+    z-index: 6;
+}
+
+.bottom{
+    grid-column: 4/ -1;
+    grid-row: 1;   
+    z-index: 5;
+}
+
+
+
